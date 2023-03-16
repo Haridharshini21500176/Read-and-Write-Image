@@ -19,36 +19,52 @@ Use imwrite(filename, image) to write the image.
 ### Step5:
 End the program and close the output image windows.
 ## Program:
-### Developed By:
-### Register Number: 
+### Developed By: Haridharshini.S
+### Register Number: 212221230033
 i) #To Read,display the image
 ```
-  
+import cv2
+A=cv2.imread("sa.jpg",1)
+cv2.imshow("Haridharshini.S",A)
+cv2.waitKey(0)
 
 ```
 ii) #To write the image
 ```
-
-
+import cv2
+A=cv2.imread("sa.jpg",1)
+cv2.imshow("Haridharshini.S",A)
+cv2.waitKey(0)
 
 ```
 iii) #Find the shape of the Image
-```python3
-
-
+```
+import cv2
+color_image = cv2.imread('sa.jpg',1)
+print(color_image.shape)
 
 ```
 iv) #To access rows and columns
 
-```python3
-
-
+```
+import random
+import cv2
+color_image = cv2.imread('sa.jpg',1)
+for i in range(150):
+    for j in range(color_image.shape[1]):
+        color_image[i][j] = [random.randint(0,255),random.randint(0,255),random.randint(0,255)]
+cv2.imshow('sun2.jpg',color_image)
+cv2.waitKey(0)
 
 ```
 v) #To cut and paste portion of image
-```python3
-
-
+```
+import cv2
+color_image = cv2.imread('sa.jpg',1)
+part = color_image[300:400,300:400]
+color_image[50:150,50:150] = part
+cv2.imshow("hari",color_image)
+cv2.waitKey(0)
 
 ```
 
@@ -56,26 +72,26 @@ v) #To cut and paste portion of image
 
 ### i) Read and display the image
 
-<br>
-<br>
+![exp1a ](https://user-images.githubusercontent.com/94168395/225528868-fe6e3c86-a313-4afc-bdda-f5f239169b83.png)
 
 ### ii)Write the image
 
-<br>
-<br>
+![exp1a ](https://user-images.githubusercontent.com/94168395/225528868-fe6e3c86-a313-4afc-bdda-f5f239169b83.png)
 
 ### iii)Shape of the Image
 
-<br>
-<br>
+![exp1b](https://user-images.githubusercontent.com/94168395/225528996-27d55f87-8281-4f12-bb6b-a7a5ad0b3090.png)
+
 
 ### iv)Access rows and columns
-<br>
-<br>
+
+![exp1c](https://user-images.githubusercontent.com/94168395/225529049-e135a617-c89e-4883-8d82-8cdc0d97b1c5.png)
+
 
 ### v)Cut and paste portion of image
-<br>
-<br>
+
+![exp1d](https://user-images.githubusercontent.com/94168395/225529135-d58af17a-edd9-4bd9-8c65-e816de2bf342.png)
+
 
 ## Result:
 Thus the images are read, displayed, and written successfully using the python program.
